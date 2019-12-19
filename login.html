@@ -1,0 +1,72 @@
+<!DOCTYPEhtml>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Javascript Login</title>
+			<link rel="stylesheet" href="css/style.css"/>
+			<script src="js/login.js"></script>
+		</head>
+
+		<body>
+
+
+
+			<div class="container">
+
+				<div class="main">
+
+					<h2> LOGIN </h2>
+
+			<form id="form_id" method="post" name="myform">
+
+					<label> User Name :</label>
+					<input type="text" name="username" id="username" placeholder="Pseudo" pattern="[A-Za-z.-]{4,12}" required/>
+
+					<label> Name :</label>
+					<input type="text" name="name" id="name" placeholder="Pseudo" pattern="[A-Za-z.-]{4,12}" required/>
+
+					<label> First Name :</label>
+					<input type="text" name="firstname" id="firstname" placeholder="first-name" pattern="[A-Za-z.-]{4,12}" required/>
+			
+					<label for="birth-day">Birthday :</label>
+					<input id="birth-day" type="date" name="birth-day" required ><br/>
+		    
+		    	<div id="email">
+					<label for="mail">Email :</label>
+  					<input id="mail" type="email" name="mail" placeholder="J-D@mail.com" required ><br/>
+  				</div>
+
+			<label> Password :</label>
+			<input type="password" name="password" id="password" placeholder=" *     *     *     *     *     * " pattern="[A-Za-z.-]{4,12}" required/>
+
+			<label> Confirm Password :</label>
+			<input type="password" name="password" id="repassword" placeholder=" *     *     *     *     *     * " required/>
+
+				<fieldset>
+
+    				<legend>SEXE</legend>
+
+    				<input type="radio" name="radio" id="radio"> 
+    				<label for="radio">Man</label>
+
+    				<input type="radio" name="radio" id="radio"> 
+    				<label for="radio">Woman</label>
+
+  				</fieldset>
+
+					<input type="button" value="Login" id="submit" onclick="validate()"/>
+
+		</form>
+
+				<p id="age"> +18 </p>
+
+				<p id="erreur"></p>
+
+		
+			</div>
+
+				</div>
+
+		</body>
+
+	</html>
